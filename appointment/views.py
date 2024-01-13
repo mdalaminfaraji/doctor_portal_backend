@@ -5,7 +5,7 @@ from .serializers import AppointmentSerializer
 class AppointmentViewset(viewsets.ModelViewSet):
         queryset=Appointment.objects.all()
         serializer_class=AppointmentSerializer
-        
+        # custom  query set korchi
         def get_queryset(self):
                 queryset= super().get_queryset()
                 patient_id=self.request.query_params.get('patient_id')
