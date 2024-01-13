@@ -8,7 +8,7 @@ class DoctorViewset(viewsets.ModelViewSet):
         queryset=Doctor.objects.all()
         serializer_class=DoctorSerializer
 class AvailableTimeViewset(viewsets.ModelViewSet):
-        permission_classes = [IsAuthenticated]
+        # permission_classes = [IsAuthenticated]
         queryset=AvailableTime.objects.all()
         serializer_class=AvailableTimeSerializer
 class SpecializationViewset(viewsets.ModelViewSet):
