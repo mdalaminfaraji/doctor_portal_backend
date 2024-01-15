@@ -5,7 +5,7 @@ class DoctorSerializer(serializers.ModelSerializer):
         user = serializers.StringRelatedField(many=False)
         designation= serializers.StringRelatedField(many=True)
         specialization = serializers.StringRelatedField(many=True)
-        available_time = serializers.StringRelatedField(many=True)
+        availableTime = serializers.StringRelatedField(many=True)
         class Meta:
                 model=Doctor
                 fields='__all__'
